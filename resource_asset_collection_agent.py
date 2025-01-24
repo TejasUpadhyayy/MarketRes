@@ -2,6 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 from huggingface_hub import HfApi
 import kaggle
+import os
+os.environ['KAGGLE_USERNAME'] = st.secrets["KAGGLE_USERNAME"]
+os.environ['KAGGLE_KEY'] = st.secrets["KAGGLE_KEY"]
+import kaggle
 
 def extract_keywords(use_case):
     """
