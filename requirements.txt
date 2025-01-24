@@ -1,0 +1,13 @@
+streamlit
+google-generativeai
+python-dotenv
+tavily-python
+huggingface-hub
+kaggle
+beautifulsoup4
+requests
+sentence-transformers
+scikit-learn
+numpy
+pandas
+markdown
