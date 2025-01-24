@@ -6,6 +6,53 @@ from enhanced_features import DocumentSearchSystem, AutomatedReportGenerator, AI
 import streamlit.components.v1 as components
 from market_insights import get_consulting_insights, format_insights
 
+st.markdown("""
+    <style>
+        .stApp {
+            background: linear-gradient(-45deg, #1e3a8a, #1e40af, #1d4ed8, #2563eb);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Enhance content visibility */
+        .stMarkdown, .stButton, .stSelectbox {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Ensure text remains readable */
+        .stMarkdown {
+            color: white !important;
+        }
+
+        .stButton > button {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .stButton > button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # Page configuration
 st.set_page_config(
     page_title="MarketRes",
