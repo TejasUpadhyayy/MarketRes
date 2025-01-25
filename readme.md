@@ -13,6 +13,9 @@ An enterprise-grade distributed multi-agent system leveraging advanced NLP and m
 
 ## System Architecture
 
+![image](https://github.com/user-attachments/assets/bcaf216e-b38f-4c35-88df-939e0d2e33ae)
+
+
 Our architecture implements a three-tier system:
 
 ### Frontend Layer
