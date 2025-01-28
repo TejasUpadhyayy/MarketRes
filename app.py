@@ -6,6 +6,13 @@ from enhanced_features import DocumentSearchSystem, AutomatedReportGenerator, AI
 import streamlit.components.v1 as components
 from market_insights import get_consulting_insights, format_insights
 
+st.set_page_config(
+    page_title="MarketRes",
+    page_icon="📈",
+    layout="wide"
+)
+
+
 st.markdown("""
     <style>
         .stApp {
@@ -53,12 +60,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Page configuration
-st.set_page_config(
-    page_title="MarketRes",
-    page_icon="📈",
-    layout="wide"
-)
 
 # Custom CSS styling
 st.markdown("""
